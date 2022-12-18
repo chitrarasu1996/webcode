@@ -36,7 +36,7 @@ const secondCountry = document.getElementById('country2')
 let searchName= '';
 
 
-async function searchHandler() {
+searchHandler= async()=> {
     
     try {
         searchName = document.getElementById('searchInput').value
@@ -69,7 +69,7 @@ let probability = [];
 
 
 
-async function getAllRecord(id, prob) {
+getAllRecord=async(id, prob) =>{
 
     const allCountryUrl="https://restcountries.com/v3.1/all";
     let countryNames = await fetch(`${allCountryUrl}`)
